@@ -1,0 +1,87 @@
+<!-- HEADER ADMIN -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Administrador</title>
+    <link rel="stylesheet" href="css/styleadmin.css">
+</head>
+
+<body>
+    <h1 class="titulo" id="titulo">Administracion</h1>
+    <!-- FIN HEADER ADMIN -->
+    <!-- MENU ADMIN -->
+    <nav class="menu-movil">
+        <div class="boton-menu" id="movil">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <nav class="menu" id="menu">
+        <ul>
+            <a href="home.html">
+                <li>Home</li>
+            </a>
+            <a href="publicaciones.html">
+                <li>Publicaciones</li>
+            </a>
+            <a href="#">
+                <li>Perfil</li>
+            </a>
+        </ul>
+    </nav>
+    <!-- FIN MENU ADMIN -->
+    <!-- PUBLICACIONES -->
+    <a href="#" class="logueado">Usuario</a>
+    <h2 class="subtitulos">Publicaciones</h2>
+    <form class="publicaciones" action="regpublicaciones.php" method="POST" enctype="multipart/form-data">
+        <div>
+            <label for="titulo">Titulo</label>
+            <input type="text" name="titulo" required>
+        </div>
+        <div>
+            <label for="imagen">Imagen</label>
+            <input type="file" name="imagen">
+        </div>
+        <div>
+            <label for="descripcion">Descripcion</label>
+            <textarea name="descripcion" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Publicar">
+            <input type="reset" value="Limpiar">
+        </div>
+    </form>
+    <h2 class="subtitulos">Listado de las Publicaciones</h2>
+    <table class="listado">
+        <thead>
+            <th>Titulo</th>
+            <th>Imagen</th>
+            <th>Descripcion</th>
+            <th>Fecha</th>
+            <th colspan="2">Operaciones</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="modformpublicaciones.html">Editar</a></td>
+                <td><a href="#">Eliminar</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- FIN PUBLICACIONES -->
+    <!-- PIE DE PAGINA ADMIN -->
+    <footer>
+        <p>Todos los Derechos Reservados &copy; 2019</p>
+    </footer>
+</body>
+
+</html>
+<!-- FIN PIE DE ADMIN -->
